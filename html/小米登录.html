@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小米账号-登录</title>
+    <link href="../img/images/杯子蛋糕.png" rel="shortcut icon" type="image/x-icon">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <link href="../html/images/xiaomilogo.png"  rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="../css/小米商城.css">
+</head>
+<body>
+    <!-- 第一部分 -->
+    <div class="top">
+        <div class="panel">
+            <div class="logo">
+                <a  href="https://www.mi.com"><img class="mistore" src="../img/images/mistore_logo.png" alt=""></a>
+            </div>
+        </div>   
+    </div>
+    <!-- 中间部分 -->
+    <div class="login-banner">
+        <div class="con">
+            
+            <div class="form">
+                <div class="nav">
+                    <span class="active">账号登陆</span>
+                    <span class="scan">扫码登陆</span>
+                </div>
+                <div class="form-content">
+                    <div class="account">
+                        <div class="entry">
+                            <input type="text" class="input-account" placeholder="邮箱/手机号/小米ID"/>
+                            <input type="password" class="input-password" placeholder="密码"/>
+                            <button class="btn-login">登录</button>
+                        </div>
+                        <div class="other-login">
+                            <a class="tel" href="#">手机短信登录/注册</a>
+                            <a class="register-login" href="#">立即注册</a>
+                            <p>|</p>
+                            <a class="register-password" href="#">忘记密码?</a>
+        
+                        </div> 
+                        <div class="dividing-login">
+                            <hr class="line-left">
+                            <span class="other-ways">其他登录方式</span>
+                            <hr class="line-right">
+                        </div>
+                        <div class="other-logins">
+                            <a class="way-qq" href="#"><i class="qq"></i></a>
+                            <a class="way-weibo" href="#"><i class="weibo"></i></a>
+                            <a class="way-alipay"  href="#"><i class="alipay"></i></a>
+                            <a class="way-weixin" href="#"><i class="weixin"></i></a>
+                        </div>
+                    </div>
+                    <div class="saoma">
+                        <img src="../img/images/erwei.png" alt="">
+                        <div class="custom">
+                            <p>使用<span>小米商城APP</span>扫一扫</p>
+                            <p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+<!-- 第三部分 -->
+    <div class="option">
+        <a href="#">简体 </a>
+        <span> |</span>
+        <a href="#">繁体 </a>
+        <span> |</span>
+        <a href="#">English </a>
+        <span> |</span>
+        <a href="#">常见问题 </a>
+        <span> |</span>
+        <a href="#">隐私政策</a>
+    </div>
+    <div class="last">
+        <span>小米公司版权所有-京ICP备10046444</span>
+        <a href="#"><img src="../img/images/logo1.png" alt="">-京公安备110108020134号</a>
+        <span>-京ICP证110507号</span>
+    </div>
+    <script>
+        $(".nav span").click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+            console.log($(this).index())
+            $(".form-content>div").eq($(this).index()).show().siblings().hide()
+        })
+    </script>
+</body>
+</html>

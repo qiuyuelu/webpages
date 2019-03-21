@@ -1,0 +1,258 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    width: 100%;
+    height: 98px;
+}
+.panel{
+    width: 1130px;
+    height: 98px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo{
+    position: absolute;
+    width: 221px;
+    height: 98px;
+}
+.mistore{
+    position: relative;
+    width: 200px;
+    height: 98px;
+}
+/* d第二部分 */
+.login-banner{
+    height: 556px;
+    background: url("../img/images/xiaomi.png.jpeg");
+    margin-left: -330px;
+}
+.con{
+    width: 1000px;
+    height: 526px;
+    margin-left: 387px;
+    position: relative;
+}
+
+/* 第三部分 */
+.form{
+    width: 400px;
+    height: 527px;
+    background: white;
+    position: absolute;
+    margin-top: 33px;
+    margin-left: 1048px;
+}
+.nav{
+    font-size: 25px;
+    margin-top: 23px;
+    margin-left: 60px;
+}
+.nav span{
+    cursor: pointer;
+    color:#aca9a9;
+}
+
+.nav>.active{
+    color:#f56600;
+}
+.scan::before{
+    content: "|";
+    margin:0 35px;
+    color: #E0E0E0;
+    font-size: 25px;
+}
+
+.entry{
+    width: 350px;
+    margin-left: 30px;
+    
+}
+.input-account{
+    height: 20px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    width: 314px;
+    margin-top: 33px;
+    border:1px solid #E0E0E0;
+
+}
+::-webkit-input-placeholder { 
+    color: #C7C7C7;
+}
+.input-password{
+    height: 20px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    width: 314px;
+    margin-top: 12px;
+    border:1px solid #E0E0E0;
+}
+
+.btn-login{
+    width: 348px;
+    height: 50px;
+    margin-top: 24px;
+    background: #ff6700;
+    color: white;
+    border: 10px solid #ff6700;
+}
+.other-login{
+    margin-top: 7px;
+    margin-left: 30px;
+}
+.other-login>p{
+    display: inline;
+    font-size: 14px;
+}
+.other-login>a{
+    text-decoration: none;
+    color: #757575;
+}
+.tel{
+    margin-right: 120px;
+    font-size: 4px;
+}
+.register-login{
+    font-size: 4px;
+}
+.register-password{
+    font-size: 4px;
+}
+.tel:hover,.register-login:hover,.register-password:hover{
+    color: rgb(255, 102, 0);
+    cursor: pointer;
+}
+.line-left{
+    width: 136px;
+    margin-top: 132px;
+    margin-left: 23px;
+}
+.other-ways{
+    float: left;
+    position: absolute;
+    margin-left: 164px;
+    font-size: 3px;
+    margin-top: -10px;
+    color: #aca9a9;
+}
+.line-right{
+    width: 136px;
+    margin-top: -2px;
+    margin-left: 239px;
+}
+
+/* 其他登录方式 */
+
+.other-logins{
+    margin-top: 15px;
+    width: 400px;
+    /* border: 1px solid #333; */
+    text-align: center;
+}
+.other-logins>a,.other-logins>i{
+    display: inline-block;
+}
+.other-logins>a{
+    width: 30px;
+    height: 30px;
+    /* background: #333; */
+    /* 设置圆形 */
+    border-radius: 50%;
+    position: relative;
+}
+i{
+    width: 18px;
+    height: 18px;
+    background-image:url("../img/images/icons_type.png");
+    position: absolute;
+    margin: auto;
+    vertical-align: middle;
+    top: 0;bottom: 0;left: 0;right: 0; 
+}
+.qq{
+    background-position-x: -19px;
+}
+.weibo{
+    background-position-x: -38px;
+}
+
+.alipay{
+    background-position-x: -57px;
+    width: 28px;
+}
+.form .alipay{
+    margin-top: 6px;
+    margin-left: 4px;
+}
+
+.way-qq{
+    background: rgb(32, 180, 248);
+    margin-right: 30px;
+}
+.weixin{
+    background-position-x: -83px;
+    width: 24px;
+}
+
+.way-weibo{
+    background: red;
+    margin-right: 30px;
+}
+.way-alipay{
+    background: rgb(0, 162, 255);
+    margin-right: 30px;
+}
+.way-weixin{
+    background: rgb(5, 194, 30);
+}
+.saoma{
+    display: none;
+    text-align: center;
+    margin-top: 120px;
+}
+.custom{
+    margin-top: 30px;
+}
+.custom>p{
+    font-size: 14px;
+    color:#757575;
+}
+.custom span{
+    padding: 0 5px;
+    color: #ff6700;
+}
+/* 中间部分结束 */
+/* 第三部分 */
+.option{
+    text-align: center;
+    margin-top: 100px;
+    color: gray;
+}
+.option>a{
+    margin-right: 7px;
+    margin-left: 7px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #757575;
+}
+.option>a:hover{
+    color:#333333;
+}
+.last{
+    text-align: center;
+    margin-top: 10px;
+    color: gray;
+}
+.last>a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #757575;
+}
+.last>span{
+    font-size: 14px;
+}
